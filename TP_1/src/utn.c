@@ -57,7 +57,7 @@ float getFloat(int min, int max, char type)
 		}
 	}
 	scanf("%f", &enteredFloat);
-	if(enteredFloat  < min || enteredFloat > max)
+	while(enteredFloat  < min || enteredFloat > max)
 	{
 		printf("\nError, reingrese el numero: ");
 		scanf("%f", &enteredFloat);
@@ -103,14 +103,14 @@ float calculateDifference(float minuend, float subtrahend)
 
 void printAerolineas(float price, float debit, float credit, float bitcoin, float unitPrice)
 {
-	printf("Precio Aerolineas: $%.2f\na) Precio con tarjeta de debito: $ %.2f\nb) Precio con tarjeta de credito: $ %.2f\nc) Precio pagando con bitcoin: %.2f BTC\nd) Mostrar precio unitario: $ %.2f\n"
+	printf("Precio Aerolineas: $%.2f\na) Precio con tarjeta de debito: $ %.2f\nb) Precio con tarjeta de credito: $ %.2f\nc) Precio pagando con bitcoin: %.3f BTC\nd) Mostrar precio unitario: $ %.2f\n"
 	, price, debit, credit, bitcoin, unitPrice);
 }
 
 
 void printLatam(float price, float debit, float credit, float bitcoin, float unitPrice)
 {
-	printf("\nPrecio Latam: $%.2f\na) Precio con tarjeta de debito: $ %.2f\nb) Precio con tarjeta de credito: $ %.2f\nc) Precio pagando con bitcoin: %.2f BTC\nd) Mostrar precio unitario: $ %.2f\n"
+	printf("\nPrecio Latam: $%.2f\na) Precio con tarjeta de debito: $ %.2f\nb) Precio con tarjeta de credito: $ %.2f\nc) Precio pagando con bitcoin: %.3f BTC\nd) Mostrar precio unitario: $ %.2f\n"
 		, price, debit, credit, bitcoin, unitPrice);
 }
 
