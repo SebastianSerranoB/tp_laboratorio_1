@@ -14,10 +14,10 @@ char subMenu(void);
 float getFloat(int, int, char);
 float calculatePrice(float, float);
 float divide(float, float);
-float calcularDiferencia(float, float);
+float calculateDifference(float, float);
 
-void mostrarAerolineas(float, float, float, float, float);
-void mostrarLatam(float, float, float, float, float);
+void printAerolineas(float, float, float, float, float);
+void printLatam(float, float, float, float, float);
 
 
 #endif /* UTN_H_ */

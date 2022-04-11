@@ -78,26 +78,26 @@ float divide(float operatorA, float operatorB)
 	return result;
 }
 
-float calcularDiferencia(float a, float b)
+float calculateDifference(float a, float b)
 {
-	float resultado;
+	float result;
 
-	resultado = a - b;
-	if(resultado < 0)
+	result = a - b;
+	if(result < 0)
 	{
-		resultado = resultado * -1;
+		result = result * -1;
 	}
 
-	return resultado;
+	return result;
 }
 
-void mostrarAerolineas(float precio, float debito, float credito, float bitcoin, float precioUnitario)
+void printAerolineas(float precio, float debito, float credito, float bitcoin, float precioUnitario)
 {
 	printf("Precio Aerolineas: $%.2f\na) Precio con tarjeta de debito: $ %.2f\nb) Precio con tarjeta de credito: $ %.2f\nc) Precio pagando con bitcoin: %.2f BTC\nd) Mostrar precio unitario: $ %.2f\n"
 	, precio, debito, credito, bitcoin, precioUnitario);
 }
 
-void mostrarLatam(float precio, float debito, float credito, float bitcoin, float precioUnitario)
+void printLatam(float precio, float debito, float credito, float bitcoin, float precioUnitario)
 {
 	printf("\nPrecio Latam: $%.2f\na) Precio con tarjeta de debito: $ %.2f\nb) Precio con tarjeta de credito: $ %.2f\nc) Precio pagando con bitcoin: %.2f BTC\nd) Mostrar precio unitario: $ %.2f\n"
 		, precio, debito, credito, bitcoin, precioUnitario);
